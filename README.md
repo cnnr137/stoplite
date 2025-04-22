@@ -8,8 +8,9 @@ Clone the repo and install dependencies:
 git clone https://github.com/yourusername/stoplite.git
 cd stoplite
 npm install
-npm run dev
- 
-```
-or something like that
+npx tsc
+npm start
 
+```
+
+or something like that
