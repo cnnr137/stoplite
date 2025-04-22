@@ -1,0 +1,2 @@
+#Stoplite
+run npm install
