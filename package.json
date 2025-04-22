@@ -1,0 +1,24 @@
+{
+  "name": "stoplite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build:preload": "tsc --project tsconfig.preload.json",
+    "build:main": "tsc --project tsconfig.json",
+    "build": "npm run build:preload && npm run build:main",
+    "start": "npm run build && electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "electron": "^35.2.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12"
+  },
+  "type": "module"
+}
