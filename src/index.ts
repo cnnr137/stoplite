@@ -10,17 +10,13 @@ const __dirname  = path.dirname(__filename);
 let mainWindow : BrowserWindow
 
 function createWindows (): void {
-    const preloadPath = path.join(__dirname, "/preload.js");
-    console.log("-> preloadPath:", preloadPath);
-    console.log("-> existsSync", fs.existsSync(preloadPath))
-
     mainWindow = new BrowserWindow({
         width: 450, height: 150,
         resizable: true,
         x: 25, y: 25,
         alwaysOnTop: true,
         webPreferences: {
-            preload: preloadPath
+            preload: path.join(__dirname, "/preload.js")
         },
         show: false
     });
